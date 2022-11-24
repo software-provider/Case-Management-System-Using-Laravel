@@ -1,0 +1,211 @@
+html,body {
+    height:100%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+.jumbotron {
+    padding: 2rem 2rem;
+}
+.login_logo {
+    width: 130px;
+    height: auto;
+    margin: 0 auto;
+}
+.navbar-brand {
+    font-family: 'Cabin Condensed', sans-serif;
+    text-transform: uppercase;
+}
+.list-group-item-action:hover {
+    background-color: #7a868afa;
+    color: #ffffff;
+}
+.list-group-item.active {
+    background-color: #62676d;
+    border-color: #62676d;
+}
+
+#action_login {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+}
+.navbar-default {
+    background-color: #f8f8f8;
+    border-color: #e7e7e7;
+    width: 100%;
+    padding: 10px 20px;
+    margin-top: 15px;
+}
+
+.top_drop_down {
+    left:auto;
+    right: 0;
+    text-align: right;
+}
+.top_drop_down a i {
+    padding-right: 10px;
+}
+#left_container_data {
+    background-color: #ffffff;
+    overflow-y: auto;
+    padding: 10px 0;
+    border-right: #F8F8F8 3px solid;
+    scrollbar-width: thin;
+}
+#left_container_data .card {
+    border: none;
+}
+.main_container {
+    padding: 20px;
+}
+#tableToolbar strong {
+    font-size: 18px;
+    vertical-align: middle;
+    padding-right: 10px;
+}
+#date-range-picker {
+    width: 300px;
+}
+#date-range-picker[readonly] {
+    background-color: #ffffff;
+    opacity: 1;
+}
+
+.bg_wait {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #fff;
+    z-index: 1500;
+    top: 0;
+    left: 0;
+}
+.bg_wait div {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -20px;
+    margin-top: -20px;
+}
+/* The snackbar - position it at the bottom and in the middle of the screen */
+#snackbar {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #333; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 2px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 30px; /* 30px from the bottom */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+    visibility: visible; /* Show the snackbar */
+    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+    However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 4.5s;
+    animation: fadein 0.5s, fadeout 0.5s 4.5s ease-in-out;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+.dropdown-item.disabled {
+    pointer-events: all;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+}
+.dropdown-item.disabled:hover {
+    background-color: #17a2b8;
+}
+
+.margin_top_bottom_10px {
+    margin: 10px 0;
+}
+.card_text_style {
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+#caseDetailTitle {
+    text-align: center;
+}
+#settlement-add-update-form > div > div.dropdown.show > div {
+    width: 100%;
+}
+.multi_select {
+    height: auto;
+    cursor: text;
+    min-height: calc(1.5em + .75rem + 2px);
+}
+
+.multi_select li {
+    display: inline-block;
+    font-size: 14px;
+    margin-right: 10px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.multi_select li i {
+    margin-left: 3px;
+    cursor: pointer;
+}
+#seller_list_from_server .disabled {
+    color: #adb5bd;
+    pointer-events: none;
+}
+#select_seller_dropdown {
+    font-size: 16px;
+}
+#management_sidebar > div > div > a > i {
+    padding-right: 20px;
+}
+@media screen and (max-width: 576px) {
+    #left_container_data {
+        height: auto !important;
+        text-align: left;
+    }
+    #tableToolbar strong {
+        display: none;
+    }
+    .main_container {
+        padding: 10px;
+    }
+    .bs-bars, .columns, .search {
+        float: none !important;
+        text-align: center;
+    }
+}
